@@ -9,7 +9,7 @@ public class Inventory implements ID{
 	{
 		// TODO Auto-generated method stub
 		Guitar guitar = null ;
-		String sql = " select * from guitar where price >= " + price1 + " and price <= " + price2 + " and builder = " + builder + " and model = " + model + " and type = " +type+ " and backwood = " + backwood + " and topwood = " + topwood ;
+		String sql = " select * from guitar where price >= " + price1 + " and price <= " + price2 + " and builder = '" + builder + "' and model = '" + model + "' and type = '" +type+ "' and backwood = '" + backwood + "' and topwood = '" + topwood +"'";
 		DBUtil db = new DBUtil() ;
 		Connection conn = db.getConnection() ;
 		Statement st = null ; 
